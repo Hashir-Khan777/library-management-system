@@ -26,4 +26,4 @@ app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
 });
 
-app.listen(process.env.PORT, () => console.log("Server is listening"));
+app.listen(process.env.PORT || 4000, () => console.log("Server is listening"));
